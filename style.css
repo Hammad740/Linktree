@@ -66,21 +66,29 @@ h1:hover {
 }
 
 .share-button {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   display: grid;
   place-items: center;
   background-color: #fff;
   border-radius: 20px;
   position: absolute;
-  right: 1.2rem;
-  top: 1.2rem;
+  right: 0.8rem;
+  top: 1rem;
   transition: all 0.2s linear;
   animation: bounce 2s infinite;
 }
 .share-button:hover {
   background-color: #e6e6e6;
   cursor: pointer;
+}
+@media screen and (min-width: 640px) {
+  .share-button {
+    right: 1.2rem;
+    top: 1.2rem;
+    height: 40px;
+    width: 40px;
+  }
 }
 
 @keyframes bounce {
